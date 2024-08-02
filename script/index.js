@@ -1,6 +1,18 @@
 let bagItems;
 onLoad();
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+  });
+});
+
+
 function onLoad() {
   let bagItemsStr = localStorage.getItem('bagItems');
   bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
@@ -50,3 +62,7 @@ function displayItemsOnHomePage() {
   });
   itemsContainerElement.innerHTML = innerHtml;
 }
+
+
+
+

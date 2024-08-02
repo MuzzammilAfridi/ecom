@@ -44,7 +44,7 @@ function displayBagSummary() {
     </div>
   </div>
   <button class="btn-place-order">
-    <div class="css-xjhrni">PLACE ORDER</div>
+    <div class="css-xjhrni"><a href="../confirmation.html">Place Order</a></div>
   </button>
   `;
 }
